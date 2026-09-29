@@ -1,0 +1,8 @@
+#!/usr/bin/env -S deno run --allow-env --allow-run --ext=js
+
+import { program } from "@/lib/program.ts";
+
+// Register available commands
+import "@/lib/commands/email/mod.ts";
+
+program.parse();
